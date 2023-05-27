@@ -55,7 +55,7 @@
 
                     <div class="form-row">
                         <label for="comments">Comments</label>
-                        <textarea type="comments" id="comments" name="comments">
+                        <textarea type="comments" id="comments" name="comments"></textarea>
                     </div>
 
                     <div class="form-row">
@@ -72,9 +72,47 @@
             </form>
         </div>
 
+        <table id="walk-event-table">
 
-
-
+            <tr>
+                <th>Name<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Date<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Start Time<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Duration<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Meeting Point<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Distance (miles)<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Walk Leader<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Contact Number<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Comments<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Status<br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Archived<br><input type="checkbox" class="search-box" id="archived-checkbox"></th>
+                <th>Actions<br><button id="reset-button">Remove Filter</button></th>
+              </tr>
+              
+        <!-- Example row -->
+            <tr>
+                <td>High Watcombe to Walton</td>
+                <td>15/06/2023</td>
+                <td>10:30am</td>
+                <td>2 hours</td>
+                <td>High Watcombe Park Entrance A</td>
+                <td>9</td>
+                <td>Helen Smith</td>
+                <td>07774075441</td>
+                <td>Grade A walk with steep hills</td>
+                <td>Approved</td>
+                <td><input type="checkbox" class="search-box" id="archived-checkbox"></td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    <button>Save</button>
+                    <select class="status-update">
+                        <option value="">--</option>
+                        <option value="approve">Approve</option>
+                        <option value="reject">Reject</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
     </body>
-
 </html>
