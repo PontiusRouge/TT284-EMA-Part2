@@ -2,17 +2,21 @@
 <html>
     <head>
         <title>Admin Login</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="login-container">
+        <div id="login-container">
             <h1>Admin Login</h1>
             <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br>
-                <button type="button" onclick="location.href='index.html'">Login</button>
+                <div class="login-form-group">
+                    <label for="username" class="login-form-label">Username:</label>
+                    <input type="text" id="username" name="username" class="login-form-input" required>
+                </div>
+                <div class="login-form-group">
+                    <label for="password" class="login-form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="login-form-input" required>
+                </div>
+                <button id="login-button" type="button" onclick="location.href='index.html'">Login</button>
             </form>
         </div>
     </body>
