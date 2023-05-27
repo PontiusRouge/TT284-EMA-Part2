@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Walk Events Admin</title>
+        <link rel="stylesheet" href = "style.css">
+    </head>
+    <body-index>
+        <h1>Walk Events</h1>
+        <a href="index.html" id="home-button">Home</a>
+
+        <div id="form-container">
+            <form id="walk-event-form">
+                <fieldset>
+                    <legend>>Add New Walk Event</legend>
+
+                    <div class="form-row">
+                        <label for="walk-name">Name of Walk</label>
+                        <input type="text" id="walk-name" name="walk-name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="walk-date">Date of Walk</label>
+                        <input type="date" id="walk-date" name="walk-date">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="start-time">Start Time</label>
+                        <input type="time" id="start-time" name="start-time">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="duration">Durarion</label>
+                        <input type="text" id="duration" name="duration">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="meeting-point">Meeting Point</label>
+                        <input type="text" id="meeting-point" name="meeting-point">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="distance">Distance in miles</label>
+                        <input type="text" id="distance" name="distance">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="walk-leader">Name of Walk Leader</label>
+                        <input type="text" id="walk-leader" name="walk-leader">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contact-number">Contact Number</label>
+                        <input type="text" id="contact-number" name="contact-number">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="comments">Comments</label>
+                        <textarea type="comments" id="comments" name="comments">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option value="proposed">Proposed</option>
+                            <option value="approved">Approved</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" value="Add Walk Event">
+                </fieldset>
+            </form>
+        </div>
+
+
+
+
+    </body>
+
+</html>
