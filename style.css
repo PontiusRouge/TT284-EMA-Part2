@@ -1,0 +1,124 @@
+/* Common styles for all pages start */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#home-button {
+    display: block;
+    width: max-content;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#home-button:hover {
+    text-decoration: underline;
+}
+/* Common styles for all pages end */
+
+
+
+/* Stylings for index file start */
+
+/* stylings for form start */ 
+#form-container {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+#walk-event-form {
+    width: 35%;
+    margin: 0;
+    text-align: left; 
+}
+
+#walk-event-form .form-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#walk-event-form label {
+    flex-basis: 40%;
+    text-align: left;
+    margin-right: 1em;
+}
+
+#walk-event-form input[type="text"],
+#walk-event-form input[type="date"],
+#walk-event-form input[type="time"],
+#walk-event-form textarea,
+#walk-event-form select {
+    flex-basis: 50%;
+    padding: .5em;
+    text-align: left; 
+}
+
+#walk-event-form input[type="submit"] {
+    width: 20%; 
+    border: 1px solid #000;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+/* stylings for form end */ 
+
+
+/*Stylings for table start */
+#reset-button {
+    padding: .5em;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: #f0f0f0;
+}
+
+#walk-events-table {
+    width: 100%;
+    border-collapse: collapse; /* this allows the borders on the cells to merge */
+    border: 1px solid black; /* this applies the border around the whole table */
+}
+
+#walk-events-table th,
+#walk-events-table td {
+    border: 1px solid black; /* this applies the border on the cells */
+    padding: 8px; /* this is for some space around the text in the cells */
+    text-align: left;
+}
+
+#walk-events-table th {
+    background-color: #f2f2f2;
+    text-transform: uppercase;
+}
+
+#walk-events-table td button {
+    margin-right: .5em;
+}
+
+#walk-events-table .search-box {
+    width: 90%; /* adjust as needed */
+    margin-top: .5em;
+    padding: 5px;
+}
+
+.status-update {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.centered-checkbox-cell {
+    text-align: center;
+}
+
+/*Stylings for table start */
+
+/* Stylings for index file end */
