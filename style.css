@@ -165,29 +165,29 @@ body {
     background-color: #f0f0f0;
 }
 
-.events-table {
+.table {
     width: 100%;
     border-collapse: collapse; /* this allows the borders on the cells to merge */
     border: 1px solid black; /* this applies the border around the whole table */
 }
 
-.events-table th,
-.events-table td {
+.table th,
+.table td {
     border: 1px solid black; /* this applies the border on the cells */
     padding: 8px; /* this is for some space around the text in the cells */
     text-align: left;
 }
 
-.events-table th {
+.tableth {
     background-color: #f2f2f2;
     text-transform: uppercase;
 }
 
-.events-table td button {
+.table td button {
     margin-right: .5em;
 }
 
-.events-table .search-box {
+.table .search-box {
     width: 90%; /* adjust as needed */
     margin-top: .5em;
     padding: 5px;
@@ -201,4 +201,4 @@ body {
 .centered-checkbox-cell {
     text-align: center;
 }
-
+/*Stylings for table end */
