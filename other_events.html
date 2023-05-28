@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Social Events Admin</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Social Events</h1>
+        <a href="index.html" id="home-button">Back to Home</a>
+
+        <div id="form-container">
+            <form class="form">
+                <fieldset>
+                    <legend>Add New Social Event</legend>
+                    
+                    <div class="form-row">
+                        <label for="event-name">Name of Event:</label>
+                        <input type="text" id="event-name" name="event-name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="event-date">Date of Event:</label>
+                        <input type="date" id="event-date" name="event-date">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="event-type">Type of Event:</label>
+                        <input type="text" id="event-type" name="event-type">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="start-time">Start time:</label>
+                        <input type="time" id="start-time" name="start-time">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="duration">Duration:</label>
+                        <input type="text" id="duration" name="duration">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location">
+                    </div>
+
+                    <input type="submit" value="Add Social Event">
+                </fieldset>
+            </form>
+        </div>
+
+        <table class="events-table">
+            <tr>
+                <th>Name <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Date <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Type <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Start Time <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Duration <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Location <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Archived<br><input type="checkbox" class="search-box" id="archived-checkbox"></th>
+                <th>Actions <br><button id="reset-button">Remove Filter</button></th>
+            </tr>
+            <tr>
+                <td>BBQ Party</td>
+                <td>30/06/2023</td>
+                <td>Outdoor</td>
+                <td>4:00 PM</td>
+                <td>5 Hours</td>
+                <td>Park A</td>
+                <td class="centered-checkbox-cell"><input type="checkbox" class="search-box" id="archived-checkbox"></td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    <button>Save</button>
+                    <button>Archive</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Charity Run</td>
+                <td>15/07/2023</td>
+                <td>Community</td>
+                <td>8:00 AM</td>
+                <td>3 Hours</td>
+                <td>City Center</td>
+                <td class="centered-checkbox-cell"><input type="checkbox" class="search-box" id="archived-checkbox"></td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    <button>Save</button>
+                    <button>Archive</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+
