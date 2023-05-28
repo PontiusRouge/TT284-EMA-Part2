@@ -1,5 +1,4 @@
 /* Common styles for all pages start */
-
 body {
     font-family: Arial, sans-serif;
 }
@@ -21,12 +20,14 @@ body {
 }
 /* Common styles for all pages end */
 
+
+
 /*Stylings for index.html start */
 #admin-home {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start; /* aligns items to the left */
+    align-items: center; 
     padding: 2em;
     box-sizing: border-box;
     height: 100vh; 
@@ -48,8 +49,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%; /* Adjust this to control the width of the tiles */
-    height: 10vh; /* Adjust this to control the height of the tiles */
+    width: 80%; 
+    height: 10vh;
     margin: 1em;
     text-decoration: none;
     text-align: center;
@@ -59,8 +60,9 @@ body {
     border: 1px solid black;
     color: black;
 }
-
 /*Stylings for index.html start */
+
+
 
 /*Stylings for login.html start*/
 #login-container {
