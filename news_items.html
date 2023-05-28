@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Panel</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Admin Panel</h1>
+        <a href="index.html" id="home-button">Back to Home</a>
+
+        <div class="form-container">
+            <form class="form" id="news-form">
+                <fieldset>
+                    <legend>Add News Item</legend>
+                    
+                    <div class="form-row">
+                        <label for="admin-name">Admin Name:</label>
+                        <input type="text" id="admin-name" name="admin-name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="posted-date">Posted Date:</label>
+                        <input type="date" id="posted-date" name="posted-date">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="subject">Subject (max 5 words):</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="news-content">News Content (max 250 words):</label>
+                        <textarea id="news-content" name="news-content"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="show-start">Show From:</label>
+                        <input type="date" id="show-start" name="show-start">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="show-end">Show Until:</label>
+                        <input type="date" id="show-end" name="show-end">
+                    </div>
+
+                    <input type="submit" value="Add News Item">
+                </fieldset>
+            </form>
+        </div>
+
+        <table class="table" id="news-table">
+            <tr>
+                <th>Admin Name <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Posted Date <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Subject <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Content <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Show From <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Show Until <br><input type="text" class="search-box" placeholder="Search"></th>
+                <th>Archived <br><input type="checkbox" class="search-box" id="archived-checkbox"></th>
+                <th>Actions <br><button id="reset-button">Remove Filter</button></th>
+            </tr>
+            <tr>
+                <td>Admin John</td>
+                <td>28/05/2023</td>
+                <td>Successful Charity Run</td>
+                <td>Our recent charity run was a great success and we raised £200 for our local charity. Thank you all for participating!</td>
+                <td>28/05/2023</td>
+                <td>04/06/2023</td>
+                <td class="centered-checkbox-cell"><input type="checkbox" class="search-box" id="archived-checkbox"></td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    <button>Save</button>                    
+                </td>
+            </tr>
+            <tr>
+                <td>Admin Mary</td>
+                <td>01/06/2023</td>
+                <td>Fun Runs Restarting</td>
+                <td>Good news! Fun runs in the park are restarting from the first of July. We look forward to seeing you there!</td>
+                <td>05/06/2023</td>
+                <td>25/06/2023</td>
+                <td class="centered-checkbox-cell"><input type="checkbox" class="search-box" id="archived-checkbox"></td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    <button>Save</button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Place for other existing content (existing forms and tables) -->
+    </body>
+</html>
