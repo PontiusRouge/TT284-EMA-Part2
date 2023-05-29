@@ -5,10 +5,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!--Page Title-->
         <h1>Email Announcements</h1>
+        
+        <!--Home and log out buttons-->
         <a href="index.html" class="button">Back to Home</a>
         <a class="button logout-button" href="login.html">Log Out</a>
         
+        <!--Add new announcement form-->
         <div id="form-container">
             <form class="form">
                 <fieldset>
@@ -45,6 +49,7 @@
             </form>
         </div>
 
+        <!--Table to display table-->
         <table class="table">
             <tr>
                 <th>Sender <br><input type="text" class="search-box" placeholder="Search"></th>
@@ -55,6 +60,8 @@
                 <th>Archived<br><input type="checkbox" class="search-box" id="archived-checkbox"></th>
                 <th>Actions <br><button id="reset-button">Remove Filter</button></th>
             </tr>
+
+            <!--Example data to show how table will show it-->
             <tr>
                 <td>Admin John</td>
                 <td>Upcoming Social Event</td>
