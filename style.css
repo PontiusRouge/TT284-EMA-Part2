@@ -1,6 +1,8 @@
 /* Common styles for all pages */
 body {
     font-family: Arial, sans-serif; /* Sets default font */
+    padding: 20px; /* Add padding around the body */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .button {
@@ -73,12 +75,13 @@ body {
 /* Styles for login.html */
 #login-container {
     /* Styles for the login container */
-    width: 300px;
+    width: 90%; /* Adjusted for small screens */
+    max-width: 300px; /* Maximum width for larger screens */
     margin: auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     border: 1px solid #000; 
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 #login-container h1 {
@@ -89,19 +92,16 @@ body {
 .login-form-group {
     /* Styles for the form group in the login container */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Stacks the elements vertically on small screens */
+    align-items: start; /* Aligns items to the left */
     margin-bottom: 10px;
 }
 
-.login-form-label {
-    /* Sets the width of the label to 30% of the parent container */
-    flex-basis: 30%;
-}
-
+.login-form-label,
 .login-form-input {
-    /* Sets the width of the input to 70% of the parent container */
-    flex-basis: 70%;
+    /* Sets the width to 100% for both the label and the input */
+    width: 100%;
+    
 }
 
 #login-button {
@@ -115,6 +115,14 @@ body {
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
+    border: 1px solid #000;
+}
+
+.login-form-input[type='text'],
+.login-form-input[type='password'] {
+    box-sizing: border-box;
+    padding: .5em;
+    margin-bottom: 10px;
     border: 1px solid #000;
 }
 
@@ -140,17 +148,15 @@ body {
 .form .form-row {
     /* Styles for form rows */
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column; /* Makes the items stack vertically on all screen sizes */
+    align-items: start; /* Aligns items to the left */
     margin-bottom: 1em;
-    flex-wrap: wrap; /* Makes sure the form inputs stack vertically on small screens */
 }
 
 .form label {
     /* Styles for labels in the form */
-    flex-basis: 100%; /* Makes the label take the full width of its container on small screens */
-    text-align: left;
-    margin-right: 1em;
+    width: 100%; /* Makes the label take the full width of its container */
+    margin-bottom: .5em; /* Adds some space between the label and the input */
 }
 
 .form input[type="text"],
@@ -159,10 +165,10 @@ body {
 .form textarea,
 .form select {
     /* Styles for various input types in the form */
-    flex-basis: 100%; /* Makes the input take the full width of its container on small screens */
+    width: 100%; /* Makes the input take the full width of its container */
     padding: .5em;
-    text-align: left; 
-    box-sizing: border-box; /* Makes sure the padding is included in the element's total width */
+    border: 1px solid #000; /* Makes sure a border is displayed */
+    box-sizing: border-box; /* Makes sure the padding and border are included in the element's total width and height */
 }
 
 /* Styles for table */
@@ -183,6 +189,8 @@ body {
     width: 100%;
     border-collapse: collapse; 
     border: 1px solid black; 
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-top: 20px; 
 }
 
 .table th,
@@ -191,6 +199,7 @@ body {
     border: 1px solid black; 
     padding: 8px; 
     text-align: left;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 .tableth {
@@ -209,7 +218,10 @@ body {
     width: 90%; 
     margin-top: .5em;
     padding: 5px;
+    border: 1px solid #000; /* Make sure border is displayed */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
+
 
 .status-update {
     /* Status update styling */
@@ -222,4 +234,44 @@ body {
     text-align: center;
 }
 
+/* For screens smaller than or equal to 375px */
+@media (max-width: 375px) {
+    body {
+        font-size: 14px; /* Decrease the font size */
+    }
 
+    /* Adjust sizes and spacing for form and input elements */
+    .form-container, 
+    .form, 
+    .form .form-row {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .form input[type="text"],
+    .form input[type="date"],
+    .form input[type="time"],
+    .form textarea,
+    .form select {
+        font-size: 14px; /* Decrease the font size in form elements */
+    }
+
+    /* Adjust sizes and spacing for table elements */
+    .table th,
+    .table td {
+        padding: 4px; /* Decrease the table cell padding */
+        font-size: 14px; /* Decrease the font size in table elements */
+    }
+
+    /* Adjust the search box size */
+    .table .search-box {
+        width: 85%;
+        padding: 3px;
+    }   
+    
+    .login-form-input[type='password'],
+    .login-form-input[type='text'] {
+        width: 100% !important;
+        border: 1px solid #000;
+    }
+}
