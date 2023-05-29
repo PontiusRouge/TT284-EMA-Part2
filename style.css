@@ -122,16 +122,19 @@ body {
 .form-container {
     /* Styles for the form container */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center; /* Centers the form */
     text-align: left;
-    width: 100%;
+    width: 100%; /* Makes the form take the full width of the screen */
+    padding: 20px; /* Add padding around the edge */
+    box-sizing: border-box; /* Makes sure the padding is included in the element's total width */
 }
 
 .form {
     /* Styles for the form */
-    width: 35%;
+    width: 100%; /* Makes the form take the full width of its container */
     margin: 0;
     text-align: left; 
+    box-sizing: border-box; /* Makes sure the padding is included in the element's total width */
 }
 
 .form .form-row {
@@ -140,11 +143,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 1em;
+    flex-wrap: wrap; /* Makes sure the form inputs stack vertically on small screens */
 }
 
 .form label {
     /* Styles for labels in the form */
-    flex-basis: 40%;
+    flex-basis: 100%; /* Makes the label take the full width of its container on small screens */
     text-align: left;
     margin-right: 1em;
 }
@@ -155,16 +159,10 @@ body {
 .form textarea,
 .form select {
     /* Styles for various input types in the form */
-    flex-basis: 50%;
+    flex-basis: 100%; /* Makes the input take the full width of its container on small screens */
     padding: .5em;
     text-align: left; 
-}
-
-.form input[type="submit"] {
-    width: auto; 
-    border: 1px solid #000;
-    padding: .5em 1em;
-    cursor: pointer;
+    box-sizing: border-box; /* Makes sure the padding is included in the element's total width */
 }
 
 /* Styles for table */
