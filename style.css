@@ -1,9 +1,10 @@
-/* Common styles for all pages start */
+/* Common styles for all pages */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Sets default font */
 }
 
-#home-button {
+.button {
+    /* Styles for the home button */
     display: block;
     width: max-content;
     padding: 10px 20px;
@@ -15,15 +16,21 @@ body {
     text-align: center;
 }
 
-#home-button:hover {
+.button:hover {
+    /* Underlines home button text on hover */
     text-decoration: underline;
 }
-/* Common styles for all pages end */
 
+/* Position the log out button */
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
-
-/*Stylings for index.html start */
+/* Styles for index.html */
 #admin-home {
+    /* Styles for the admin home page container */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -34,6 +41,7 @@ body {
 }
 
 #admin-title {
+    /* Styles for the title on the admin home page */
     width: 100%;
     text-align: center;
     border-top: 1px solid black;
@@ -46,6 +54,7 @@ body {
 }
 
 .nav-link {
+    /* Styles for navigation links */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,12 +69,10 @@ body {
     border: 1px solid black;
     color: black;
 }
-/*Stylings for index.html start */
 
-
-
-/*Stylings for login.html start*/
+/* Styles for login.html */
 #login-container {
+    /* Styles for the login container */
     width: 300px;
     margin: auto;
     padding: 20px;
@@ -75,10 +82,12 @@ body {
 }
 
 #login-container h1 {
+    /* Centers the title in the login container */
     text-align: center;
 }
 
 .login-form-group {
+    /* Styles for the form group in the login container */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,14 +95,17 @@ body {
 }
 
 .login-form-label {
+    /* Sets the width of the label to 30% of the parent container */
     flex-basis: 30%;
 }
 
 .login-form-input {
+    /* Sets the width of the input to 70% of the parent container */
     flex-basis: 70%;
 }
 
 #login-button {
+    /* Styles for the login button */
     display: block;
     width: 100%;
     padding: 10px;
@@ -105,11 +117,10 @@ body {
     text-align: center;
     border: 1px solid #000;
 }
-/*Stylings for login.html end*/
 
-
-/* Stylings for form start */
+/* Styles for form */
 .form-container {
+    /* Styles for the form container */
     display: flex;
     justify-content: flex-start;
     text-align: left;
@@ -117,12 +128,14 @@ body {
 }
 
 .form {
+    /* Styles for the form */
     width: 35%;
     margin: 0;
     text-align: left; 
 }
 
 .form .form-row {
+    /* Styles for form rows */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -130,6 +143,7 @@ body {
 }
 
 .form label {
+    /* Styles for labels in the form */
     flex-basis: 40%;
     text-align: left;
     margin-right: 1em;
@@ -140,67 +154,74 @@ body {
 .form input[type="time"],
 .form textarea,
 .form select {
+    /* Styles for various input types in the form */
     flex-basis: 50%;
     padding: .5em;
     text-align: left; 
 }
 
 .form input[type="submit"] {
-    width: 20%; 
+    width: auto; 
     border: 1px solid #000;
     padding: .5em 1em;
     cursor: pointer;
 }
-/* stylings for form end */ 
 
-
-/*Stylings for table start */
+/* Styles for table */
 #reset-button {
+    /* Styles for the reset button */
     padding: .5em;
     border: 1px solid #000;
     cursor: pointer;
 }
 
 #reset-button:hover {
+    /* Changes the background color of the reset button on hover */
     background-color: #f0f0f0;
 }
 
 .table {
+    /* Styles for the table */
     width: 100%;
-    border-collapse: collapse; /* this allows the borders on the cells to merge */
-    border: 1px solid black; /* this applies the border around the whole table */
+    border-collapse: collapse; 
+    border: 1px solid black; 
 }
 
 .table th,
 .table td {
-    border: 1px solid black; /* this applies the border on the cells */
-    padding: 8px; /* this is for some space around the text in the cells */
+    /* Styles for table headers and table data */
+    border: 1px solid black; 
+    padding: 8px; 
     text-align: left;
 }
 
 .tableth {
+    /* Styles for table headers */
     background-color: #f2f2f2;
     text-transform: uppercase;
 }
 
 .table td button {
+    /* Button in table cell styling */
     margin-right: .5em;
 }
 
 .table .search-box {
-    width: 90%; /* adjust as needed */
+    /* Search box in table styling */
+    width: 90%; 
     margin-top: .5em;
     padding: 5px;
 }
 
 .status-update {
+    /* Status update styling */
     margin-left: 10px;
     margin-top: 10px;
 }
 
 .centered-checkbox-cell {
+    /* Checkbox cell styling */
     text-align: center;
 }
-/*Stylings for table end */
 
 
